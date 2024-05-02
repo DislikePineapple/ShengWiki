@@ -1,0 +1,18 @@
+site_name: ShengWiki
+
+nav:
+  - 序言: index.md
+  - 工具箱: 
+    - Markdown: data/Toolkits/Markdown.md
+    - Git: data/Toolkits/Git.md
+    - Latex: data/Toolkits/Latex.md
+    - Vim: data/Toolkits/Vim.md
+    - MKDocs: data/Toolkits/MKDocs.md
+    - 双拼: data/Toolkits/DoublePinyin.md
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: dark blue
+    accent: blue
