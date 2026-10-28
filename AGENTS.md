@@ -46,11 +46,9 @@ with Zensical.
 
 ## Publication policy
 
-- Public repository: `DislikePineapple/ShengWiki`.
-- Planned public test URL: `https://dislikepineapple.github.io/ShengWiki/`.
-- The repository was reported as public during the 2026-10-28 preparation audit, despite the private-during-development policy. Review this visibility mismatch and the publication audit before deployment; do not change visibility without explicit approval.
-- `.github/workflows/docs.yml` builds with Zensical and deploys `site/` to GitHub Pages. After publication is explicitly approved, GitHub Pages is configured to use GitHub Actions, and this workflow reaches `main`, pushes to `main` automatically deploy the site. Manual workflow dispatch is also available.
+- The maintained documentation site is the public repository `DislikePineapple/ShengWiki` at `https://dislikepineapple.github.io/ShengWiki/`.
+- `.github/workflows/docs.yml` builds with Zensical and deploys `site/` to GitHub Pages. Pushes to `main` automatically deploy the site; manual workflow dispatch is also available.
 - The local workflow does not publish by itself. Do not commit, push, run a deployment, or otherwise publish without explicit approval.
-- Preserve `ShengWiki.jl` and its Documenter deployment until the new public site is verified.
+- `ShengWiki.jl` is a separate repository and was not archived when checked on 2026-10-28. Record it as archived only after GitHub confirms the archive action.
 - No commits, pushes, tags, publishing, or visibility changes without explicit approval.
-- Archive the repository only with explicit approval. No URL redirects are required.
+- No URL redirects are required.
