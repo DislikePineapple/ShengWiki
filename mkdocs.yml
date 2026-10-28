@@ -1,4 +1,5 @@
 site_name: ShengWiki
+site_url: https://dislikepineapple.github.io/ShengWiki/
 
 nav:
   - 序言: index.md
@@ -7,6 +8,7 @@ nav:
     - Git: data/Toolkits/Git.md
     - Latex: data/Toolkits/Latex.md
     - Vim: data/Toolkits/Vim.md
+    - VSCode: data/Toolkits/VSCode.md
     - MKDocs: data/Toolkits/MKDocs.md
     - 双拼: data/Toolkits/DoublePinyin.md
 

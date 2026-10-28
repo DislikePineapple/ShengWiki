@@ -1,3 +1,3 @@
-## Short Cut
+## VS code Shortcut
 
-![ShortCut](../../pics/keyboard-shortcuts-windows.pdf)
+[Shortcut](https://code.visualstudio.com/docs/configure/keybindings)
