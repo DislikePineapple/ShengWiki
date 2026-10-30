@@ -37,6 +37,12 @@ with Zensical.
   or change repository visibility without explicit approval.
 - Recommend a Git checkpoint before reorganizing.
 
+## Protected-main development workflow
+- Develop changes on a task-specific feature branch based on an updated `main` branch. Do not push directly to the protected `main` branch.
+- Open a Pull Request targeting `main`. The `.github/workflows/validate.yml` workflow automatically validates Pull Requests with a strict Zensical build before merging.
+- Merge only after validation succeeds and the required review is complete. A merge to `main` triggers the GitHub Pages deployment workflow in `.github/workflows/docs.yml`.
+- Commits, pushes, and merges require explicit user approval.
+
 ## Task Workflow
 1. Inspect relevant repository content.
 2. State the proposed changes.
