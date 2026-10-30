@@ -52,3 +52,12 @@ with Zensical.
 - `ShengWiki.jl` is a separate repository and was not archived when checked on 2026-10-28. Record it as archived only after GitHub confirms the archive action.
 - No commits, pushes, tags, publishing, or visibility changes without explicit approval.
 - No URL redirects are required.
+
+### Browser testing
+
+- Use the `playwright_edge` MCP server for browser testing.
+- Use Microsoft Edge with the `codex` profile (directory: `Profile`).
+- Never access or modify my personal `sheng` profile.
+- Do not navigate to internal Edge pages such as `edge://version` through Playwright.
+- Restrict automated browsing to the testing profile and authorized pages.
+- If the browser connection fails, report the error rather than switching browser profiles.

@@ -1,0 +1,150 @@
+:root>* {
+    --md-primary-fg-color: #143A63;
+    --md-primary-fg-color--light: #24517D;
+    --md-primary-fg-color--dark: #0D2947;
+    --md-accent-fg-color: #27659C;
+    --md-accent-fg-color--transparent: rgba(39, 101, 156, 0.12);
+    --md-accent-bg-color: #FFFFFF;
+    --md-default-bg-color: #F8FAFD;
+}
+
+.home-hero {
+    display: flex;
+    min-height: clamp(280px, 30vw, 360px);
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0 0 1.75rem;
+    overflow: hidden;
+    padding: clamp(1.5rem, 5vw, 3.75rem);
+    border-radius: 1.1rem;
+    color: #FFFFFF;
+    background-image: url("../pics/BackGround.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-hero__content {
+    max-width: 40rem;
+    transform: translateY(2rem);
+}
+
+.home-hero h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: clamp(2.75rem, 6.5vw, 4.75rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero__content p {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: clamp(1.1rem, 1.9vw, 1.35rem);
+  line-height: 1.6;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45);
+}
+
+.md-typeset .home-hero ~ p {
+    font-family: "华为行楷", "Huawei Xingkai", "STXingkai", cursive;
+}
+
+.md-typeset .home-hero ~ p .home-intro__en {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.md-typeset .toolkit-heading__zh,
+.md-typeset .toolkit-card__label--zh {
+    font-family: "黑体", "SimHei", sans-serif;
+}
+
+.md-typeset .home-hero~h2+ul {
+    --toolkit-card-gap: 0.85rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--toolkit-card-gap);
+    margin: 1.1rem 0 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.md-typeset .home-hero~h2+ul li {
+    margin: 0;
+}
+
+.md-typeset .home-hero~h2+ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 13rem;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem;
+    border: 1px solid #EDF3FA;
+    border-radius: 1.35rem;
+    background: #EDF3FA;
+    color: #143A63;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.md-typeset .home-hero~h2+ul a:hover {
+    transform: translateY(-2px);
+    border-color: #D7E5F2;
+    background: #E6EFF8;
+    color: #143A63;
+    box-shadow: 0 5px 14px rgba(20, 58, 99, 0.08);
+}
+
+.md-typeset .home-hero~h2+ul a:focus-visible {
+    outline: 3px solid #27659C;
+    outline-offset: 3px;
+}
+
+.toolkit-card__icon {
+    display: block;
+    flex: 0 0 2rem;
+    width: 2rem;
+    height: 2rem;
+    color: #27659C;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@media (max-width: 760px) {
+    .home-hero {
+        min-height: 280px;
+        padding: 1.6rem;
+        border-radius: 0.9rem;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(2.6rem, 12vw, 3.5rem);
+    }
+}
+
+@media (max-width: 1024px) {
+    .md-typeset .home-hero~h2+ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 520px) {
+    .md-typeset .home-hero~h2+ul {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+}
