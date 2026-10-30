@@ -3,6 +3,7 @@ site_url: https://dislikepineapple.github.io/ShengWiki/
 
 nav:
   - 序言: index.md
+  - ShengWiki 开发: data/Article/ShengWiki.md
   - 工具箱: 
     - Markdown: data/Toolkits/Markdown.md
     - Git: data/Toolkits/Git.md
